@@ -218,4 +218,13 @@ object FormCliente: TFormCliente
     TabOrder = 6
     OnClick = ButtonSalirFormClienteClick
   end
+  object Button2: TButton
+    Left = 352
+    Top = 537
+    Width = 75
+    Height = 25
+    Caption = 'Reporte'
+    TabOrder = 7
+    OnClick = Button2Click
+  end
 end

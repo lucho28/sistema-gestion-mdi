@@ -21,6 +21,8 @@ type
     DataSourceArticulos: TDataSource;
     ClientDataSetArticulos: TClientDataSet;
     FDQueryArticulos: TFDQuery;
+    frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
   private
     { Private declarations }
   public

@@ -26,6 +26,7 @@ type
     ButtonLimpiarBusqueda: TButton;
     ButtonImprimirCliente: TButton;
     ButtonSalirFormCliente: TButton;
+    Button2: TButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button1Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
@@ -43,6 +44,7 @@ type
     procedure ButtonLimpiarBusquedaClick(Sender: TObject);
     procedure ButtonImprimirClienteClick(Sender: TObject);
     procedure ButtonSalirFormClienteClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
 
 
   private
@@ -83,6 +85,14 @@ end;
 procedure TFormCliente.ButtonSalirFormClienteClick(Sender: TObject);
 begin
   FormCliente.Close;
+end;
+
+procedure TFormCliente.Button2Click(Sender: TObject);
+begin
+  with datamodule8 do
+  begin
+    frxReport1.ShowReport();
+  end;
 end;
 
 procedure TFormCliente.Button4Click(Sender: TObject);
@@ -253,7 +263,7 @@ begin
 
   with DataModule8 do
   begin
-    //frxReport1.ShowReport();
+    frxReport1.ShowReport();
   end;
 end;
 
