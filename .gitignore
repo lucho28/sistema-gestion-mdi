@@ -1,0 +1,9 @@
+*.local
+*.identcache
+*.res
+*.fdb
+Win32/
+__history/
+__recovery/
+*.stat
+*.bak
